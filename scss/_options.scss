@@ -90,6 +90,20 @@
                 background: url(../img/pro-options-list-check.svg) no-repeat center/contain;
                 margin-top: 9px;
             }
+            &-cross {
+                color: rgba(255, 255, 255, .3);
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    background: url(../img/cross.svg) no-repeat center/contain;
+                    margin-top: 7px;
+                }
+            }
+            .color-blue {
+                color: #2764e0;
+            }
         }
     }
 }
