@@ -1,0 +1,126 @@
+@media screen and (max-width:1023px) {
+    .container {
+        width: 100%;
+        padding: 0 16px;
+    }
+    .container_pr0 {
+        padding-right: 0;
+    }
+    .pro-promo {
+        &__img {
+            position: relative;
+            
+            right: 0;
+            img {
+                scale: 1;
+            }
+        }
+        padding-bottom: 0;
+    }
+    .pro-wins {
+        .pro-wins {
+            &__wrapper {
+                margin-top: 24px;
+                li {
+                    display: flex;
+                    gap: 16px;
+                }
+            }
+            &__text {
+                margin-top: 0;
+            }
+        }
+    }
+    .pro-ai {
+        .pro-wins {
+            &__wrapper {
+                margin-top: 24px;
+                li {
+                    display: flex;
+                    gap: 16px;
+                }
+            }
+            &__text {
+                margin-top: 0;
+            }
+        }
+        &__num {
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            min-height: 40px;
+        }
+    }
+    .pro-options {
+        &__item {
+            padding: 16px;
+            .pro-btn_white, .pro-btn_transparent {
+                padding-inline: 8px;
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    .pro-title {
+        font-size: 24px;
+        text-align: left;
+    }
+    .pro-subtitle {
+        text-align: left;
+    }
+    .pro-promo {
+        padding: 20px 0 0;
+        &__title {
+            font-size: 32px;
+        }
+        .pro-btn {
+            width: 100%;
+        }
+        &__img {
+            top: 0;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .pro-wins {
+        padding: 20px 0;
+        &__text {
+            font-size: 18px;
+        }
+        &__wrapper {
+            padding: 0;
+            gap: 16px;
+        }
+        &__item {
+            img {
+                width: 40px;
+            }
+        }
+    }
+    .pro-ai {
+        padding: 40px 0 20px;
+    }
+    .pro-dop {
+        &__wrap {
+            gap: 20px;
+        }
+    }
+    .pro-rew {
+        .pro-wins__wrapper {
+            margin-top: 24px;
+        }
+        &__stars {
+            margin-bottom: 8px;
+        }
+        .pro-btn_transparent {
+            margin-top: 105px;
+        }
+    }
+    .pro-options {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+    }
+}
