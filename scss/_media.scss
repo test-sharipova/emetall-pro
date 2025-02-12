@@ -120,7 +120,41 @@
     }
     .pro-options {
         &__wrapper {
+            // grid-template-columns: 1fr;
+            gap: 16px;
+            display: flex;
+            align-items: stretch;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding-right: 16px;
+        }
+        &__item:first-child, &__item:nth-child(3) {
+            border-radius: 12px;
+            margin-top: 0;
+        }
+        &__item {
+            min-height: auto;
+            min-width: calc(100vw - 64px);
+            scroll-snap-align: start;
+        }
+    }
+    .pro-faq {
+        &__summary {
+            font-size: 20px;
+        }
+    }
+    .pro-form {
+        &__content {
+            padding: 16px;
+        }
+        .pro-title {
+            text-align: center;
+        }
+        &__form {
             grid-template-columns: 1fr;
+            .pro-btn {
+                padding-inline: 8px;
+            }
         }
     }
 }

@@ -102,6 +102,36 @@
                 display: block;
             }
         }
+        &-phone {
+            &__wrap {
+                position: relative;
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 15px;
+                    height: 10px;
+                    background: url(../img/flag-ru.svg) no-repeat center/cover;
+                    position: absolute;
+                    top: 50%;
+                    left: 16px;
+                    transform: translateY(-50%);
+                }
+                &:after {
+                    content: '+7';
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: #ebecee;
+                    line-height: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 39px;
+                    transform: translateY(-50%);
+                }
+                input {
+                    padding-left: 60px;
+                }
+            }
+        }
         border: 1px solid #ddd;
         background: #050505;
         height: 44px;
@@ -110,6 +140,7 @@
         width: 100%;
         color: inherit;
         font-family: inherit;
+        font-size: 15px;
         &::placeholder {
             font-weight: 400;
             font-size: 15px;
