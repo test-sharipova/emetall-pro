@@ -1,0 +1,95 @@
+.pro-options {
+    padding: 40px 0;
+    &__wrapper {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        align-items: start;
+        margin-top: 32px;
+    }
+    &__item {
+        border: 1px solid rgba(224, 224, 224, .3);
+        padding: 20px 23px 25px 32px;
+        min-height: 783px;
+        margin-top: 16px;
+        .pro-btn_transparent, .pro-btn_white {
+            margin-top: 24px;
+            width: 100%;
+            max-width: 340px;
+        }
+        &:first-child {
+            border-radius: 12px 0 0 12px;
+            margin-right: -1px;
+        }
+        &:nth-child(2) {
+            border-radius: 12px;
+            position: relative;
+            z-index: 2;
+        }
+        &:nth-child(3) {
+            border-radius: 0 12px 12px 0;
+            margin-left: -1px;
+            .pro-options__subtitle {
+                margin-top: 1px;
+            }
+        }
+        &-accent {
+            background: linear-gradient(#050505, #050505 0) padding-box,
+            linear-gradient(to right, #3A5BD3, #D40D60) border-box;
+            border: 4px solid transparent;
+            
+            padding: 32px 21px 46px 26px;
+            margin-top: 0;
+            .pro-options__subtitle {
+                margin-top: 1px;
+            }
+        }
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: normal;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 137%;
+        color: #bfbfbf;
+        margin-top: 8px;
+        min-height: 66px;
+    }
+    &__price {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: normal;
+        margin-top: 24px;
+        span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 157%;
+            color: #bfbfbf;
+        }
+    }
+    &__list {
+        list-style-type: none;
+        margin-top: 24px;
+        &__item {
+            display: flex;
+            gap: 7px;
+            align-items: flex-start;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 137%;
+            margin-bottom: 8px;
+            &::before {
+                content: '';
+                display: block;
+                width: 13.16px;
+                height: 9.19px;
+                background: url(../img/pro-options-list-check.svg) no-repeat center/contain;
+                margin-top: 9px;
+            }
+        }
+    }
+}

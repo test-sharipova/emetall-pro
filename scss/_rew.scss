@@ -1,0 +1,32 @@
+.pro-rew {
+    padding: 40px 0;
+    &__name {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 137%;
+        margin-bottom: 0px;
+    }
+    .pro-btn_transparent {
+        margin: 50px auto 0;
+        padding-inline: 100px;
+    }
+    &__stars {
+        margin-bottom: 22px;
+    }
+    &__date {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 137%;
+        color: #bfbfbf;
+        opacity: 0.5;
+        margin-top: 19px;
+    }
+    .pro-wins__wrapper {
+        margin-top: 63px;
+        padding: 0;
+        gap: 7%;
+    }
+    .pro-wins__subtext {
+        margin-top: 0;
+    }
+}

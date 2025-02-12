@@ -1,0 +1,66 @@
+.pro-faq {
+    padding: 40px 0;
+    &__block {
+        max-width: 960px;
+        margin: 22px auto 0;
+    }
+    &__summary {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: normal;
+        padding: 32px 32px 32px 0;
+        transition: color .3s;
+        position: relative;
+        &:hover {
+            color: #2764e0;
+            &:before, &:after {
+                background: #2764e0;
+            }
+        }
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 1px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 2px;
+            width: 26px;
+            background: #fff;
+            border-radius: 3px;
+        }
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 26px;
+            width: 2px;
+            background: #fff;
+            border-radius: 3px;
+        }
+    }
+    &__details {
+        border-bottom: 1px solid #474747;
+        
+        cursor: pointer;
+        &[open] {
+            .pro-faq__summary {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+    &__text {
+        padding-bottom: 32px;
+        
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 137%;
+            color: #bfbfbf;
+                    
+    }
+}
